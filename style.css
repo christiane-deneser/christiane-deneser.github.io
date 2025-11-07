@@ -1,0 +1,63 @@
+html {
+  font-family: "rockwell-nova", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 3em;
+}
+
+body {
+  background-color: aliceblue;
+  font-size: 160%;
+  line-height: 1.4;
+  @media (min-width: 1240px) {
+    max-width: 75%;
+  }
+}
+
+header {
+  background-color: lightgreen;
+}
+
+main {
+  background-color: blanchedalmond;
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1.5rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.site-logo img {
+  display: block;
+  height: 40px;       /* or 32 / 48 etc. */
+  width: auto;
+}
+
+.site-nav a {
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+.site-nav a:focus-visible,
+.site-nav a:hover {
+  text-decoration: underline;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  max-width: 400px;
+}
