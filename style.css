@@ -6,7 +6,6 @@ html {
 }
 
 body {
-  background-color: aliceblue;
   font-size: 160%;
   line-height: 1.4;
   @media (min-width: 1240px) {
@@ -60,4 +59,44 @@ main {
   padding: 1.5rem;
   border-radius: 0.5rem;
   max-width: 400px;
+}
+
+.btn {
+  font: inherit;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  min-width: 120px;
+}
+
+.btn:focus {
+  outline: 3px solid #FFD54F; /* accessible yellow focus */
+  outline-offset: 2px;
+}
+
+.btn-primary {
+  background: #1A73E8;
+  color: #fff;
+}
+
+.btn-primary:hover:not([disabled]) {
+  background: #1664c4;
+}
+
+.btn-secondary {
+  background: #fff;
+  color: #1A73E8;
+  border-color: #1A73E8;
+}
+
+.btn-secondary:hover {
+  background: #e8f0fe;
+}
+
+.btn[disabled] {
+  background: #E0E0E0;
+  color: #8C8C8C;
+  cursor: not-allowed;
+  opacity: 0.7;
 }
