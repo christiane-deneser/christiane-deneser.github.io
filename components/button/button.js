@@ -1,0 +1,1 @@
+// components/button/button.js should only deal with button demo logic.

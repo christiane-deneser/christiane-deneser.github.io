@@ -92,6 +92,40 @@ christiane-deneser.github.io/
 └─ ... # Images / illustrations (optional)
 ```
 
+```text
+christiane-deneser.github.io/
+├─ index.html 
+├─ pages/                      
+│  └─ about/
+│     └─ index.html
+├─ components/                      
+│  └─ button/
+│     ├─ styles.scss
+│     ├─ button.js
+│     └─ index.html
+├─ assets/
+│  ├─ scss/
+│  │  ├─ _reset.scss
+│  │  ├─ _tokens.scss
+│  │  ├─ _base.scss
+│  │  └─ global.scss           
+│  ├─ css/
+│  │  └─ global.css            
+│  ├─ js/
+│  │  ├─ main.js               
+│  │  └─ modules/              
+│  └─ img/
+└─ package.json
+```
+
+```
+components/button/
+├─ styles.scss
+├─ styles.css     # compiled output
+├─ button.js
+└─ index.html
+```
+
 ---
 
 ## 🔗 Connected repositories
