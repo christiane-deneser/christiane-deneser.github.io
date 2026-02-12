@@ -95,12 +95,12 @@ h1 {
 }
 @media (min-width: 48rem) {
   h1 {
-    font-size: var(--font-size-60);
+    font-size: var(--font-size-56);
   }
 }
 
 h2 {
-  font-size: var(--font-size-32);
+  font-size: var(--font-size-34);
 }
 @media (min-width: 48rem) {
   h2 {

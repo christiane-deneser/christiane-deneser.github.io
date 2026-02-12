@@ -12,17 +12,18 @@ h1, h2, h3 {
   font-weight: 700;
   line-height: var(--line-height-h);
   margin-bottom: var(--space-m);
+  // max-width: 35ch;
 }
 
 h1 {
   font-size: var(--font-size-34);
   @media (min-width: 48rem) {
-    font-size: var(--font-size-60);
+    font-size: var(--font-size-56);
   }
 }
 
 h2 {
-  font-size: var(--font-size-32);
+  font-size: var(--font-size-34);
   @media (min-width: 48rem) {
     font-size: var(--font-size-56);
   }
