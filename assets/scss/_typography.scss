@@ -1,0 +1,61 @@
+/* assets/scss/_typography.scss */
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--font-size-18);
+  font-weight: 400;
+  line-height: var(--line-height);
+  color: var(--color-text);
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  line-height: var(--line-height-h);
+  margin-bottom: var(--space-m);
+}
+
+h1 {
+  font-size: var(--font-size-34);
+  @media (min-width: 48rem) {
+    font-size: var(--font-size-60);
+  }
+}
+
+h2 {
+  font-size: var(--font-size-32);
+  @media (min-width: 48rem) {
+    font-size: var(--font-size-56);
+  }
+}
+
+h3 {
+  font-size: var(--font-size-24);
+}
+
+p {
+  margin-bottom: var(--space-m);
+  max-width: 65ch;
+}
+
+ol, ul {
+  margin-bottom: var(--space-m);
+  padding-left: 1.25rem;
+}
+
+li {
+  margin-bottom: var(--space-xs);
+}
+
+a {
+  color: var(--color-link);
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}

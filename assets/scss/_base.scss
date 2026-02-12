@@ -1,4 +1,11 @@
 /* assets/scss/_base.scss */
+/* forwards low-level foundation  */
 
 @forward 'reset';
 @forward 'tokens';
+
+// html
+// body
+body {
+  background: var(--color-bg);
+}
