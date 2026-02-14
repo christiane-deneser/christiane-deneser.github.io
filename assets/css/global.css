@@ -61,8 +61,10 @@ input, button, textarea, select {
   --line-height: 1.5;
   --line-height-h: 1.2;
   --color-text: #111;
+  --color-text-secondary: #fff;
   --color-link: #005fcc;
   --color-bg: #F3F3F3;
+  --color-bg-secondary: #111;
   --space-xs: 0.25rem;
   --space-s: 0.5rem;
   --space-m: 1rem;
@@ -138,6 +140,49 @@ a:hover {
 a:focus-visible {
   outline: 2px solid currentColor;
   outline-offset: 2px;
+}
+
+footer {
+  font-weight: 600;
+  background: var(--color-bg-secondary);
+  color: var(--color-text-secondary);
+  padding: 2rem 0;
+}
+@media (min-width: 48rem) {
+  footer {
+    padding: 8rem 0;
+  }
+}
+
+.container {
+  padding: 0 1rem;
+}
+
+footer ul {
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+footer ul li {
+  padding: 0.5rem;
+  margin-bottom: 0;
+}
+@media (min-width: 48rem) {
+  footer ul li {
+    display: inline-flex;
+  }
+}
+
+footer ul a {
+  padding: 0.5rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+footer ul a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
 }
 
 /* Simple layout for library landing page */
