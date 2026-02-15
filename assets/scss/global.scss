@@ -2,11 +2,15 @@
 
 @use 'base';
 @use 'typography';
+@use 'header';
 @use 'footer';
+@use 'teaser';
 
 /* Simple layout for library landing page */
-.main {
-  max-width: 70rem;
-  margin: 0 auto;
-  padding: var(--space-l);
+main {
+  margin-bottom: 4rem;
+}
+
+.container {
+  padding: 0 1rem;
 }

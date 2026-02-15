@@ -48,7 +48,8 @@ input, button, textarea, select {
 }
 /* assets/scss/_tokens.scss */
 :root {
-  --font-body: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-headings: "roca", sans-serif;
+  --font-body: "ff-dagny-web-pro", sans-serif;
   --font-size-14: 0.875rem;
   --font-size-16: 1rem;
   --font-size-18: 1.125rem;
@@ -63,8 +64,10 @@ input, button, textarea, select {
   --color-text: #111;
   --color-text-secondary: #fff;
   --color-link: #005fcc;
-  --color-bg: #F3F3F3;
+  --color-bg: #fbfff7;
   --color-bg-secondary: #111;
+  --1: #4f052fc7;
+  --2: #543f7a;
   --space-xs: 0.25rem;
   --space-s: 0.5rem;
   --space-m: 1rem;
@@ -84,10 +87,12 @@ body {
   font-weight: 400;
   line-height: var(--line-height);
   color: var(--color-text);
+  font-style: normal;
 }
 
 h1, h2, h3 {
-  font-weight: 700;
+  font-family: var(--font-headings);
+  font-weight: 600;
   line-height: var(--line-height-h);
   margin-bottom: var(--space-m);
 }
@@ -142,6 +147,14 @@ a:focus-visible {
   outline-offset: 2px;
 }
 
+header {
+  height: 5rem;
+}
+
+header nav {
+  display: none;
+}
+
 footer {
   font-weight: 600;
   background: var(--color-bg-secondary);
@@ -152,10 +165,6 @@ footer {
   footer {
     padding: 8rem 0;
   }
-}
-
-.container {
-  padding: 0 1rem;
 }
 
 footer ul {
@@ -185,11 +194,19 @@ footer ul a:hover {
   text-decoration-thickness: 2px;
 }
 
+.teaser {
+  margin-bottom: 4rem;
+  border: 1px solid black;
+  padding: 1.125rem;
+}
+
 /* Simple layout for library landing page */
-.main {
-  max-width: 70rem;
-  margin: 0 auto;
-  padding: var(--space-l);
+main {
+  margin-bottom: 4rem;
+}
+
+.container {
+  padding: 0 1rem;
 }
 
 /*# sourceMappingURL=global.css.map */

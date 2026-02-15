@@ -1,7 +1,7 @@
 /* assets/scss/_tokens.scss */
 
 :root {
-  --font-headings: "aquavit", sans-serif;
+  --font-headings: "roca", sans-serif;
   --font-body: "ff-dagny-web-pro", sans-serif;
   // --font-body: "forma-djr-micro", sans-serif;
   
@@ -23,8 +23,10 @@
   --color-text-secondary: #fff;
   --color-link: #005fcc;
 
-  --color-bg: #F3F3F3; //;primary background color
+  --color-bg: #fbfff7; //#F3F3F3; //;primary background color
   --color-bg-secondary: #111;
+  --1: #4f052fc7; 
+  --2: #543f7a;
 
   --space-xs: 0.25rem; //4px
   --space-s: 0.5rem; //8px
