@@ -156,7 +156,7 @@ a:focus-visible {
   padding: 1rem 0 1.75rem 0;
   border-bottom: 1px solid black;
 }
-@media (min-width: 38rem) {
+@media (min-width: 48rem) {
   .header-inner {
     padding: 1rem 0;
     border-bottom: 0;
@@ -167,7 +167,7 @@ a:focus-visible {
   display: flex;
   flex-direction: column;
 }
-@media (min-width: 38rem) {
+@media (min-width: 48rem) {
   .header-nav {
     flex-direction: row-reverse;
   }
@@ -186,7 +186,7 @@ a:focus-visible {
   width: 3.5rem;
   height: 3.5rem;
 }
-@media (min-width: 38rem) {
+@media (min-width: 48rem) {
   .menu-button {
     display: none;
   }
@@ -214,7 +214,7 @@ a:focus-visible {
   display: grid;
   gap: 0.75rem;
 }
-@media (min-width: 38rem) {
+@media (min-width: 48rem) {
   .main-menu-list {
     display: inline-flex;
   }
@@ -224,7 +224,7 @@ a:focus-visible {
   padding: 0.5rem;
   margin-bottom: 0;
 }
-@media (min-width: 38rem) {
+@media (min-width: 48rem) {
   .main-menu-list li {
     display: inline-flex;
   }
@@ -236,7 +236,7 @@ a:focus-visible {
   display: inline-block;
   color: inherit;
 }
-@media (min-width: 38rem) {
+@media (min-width: 48rem) {
   .main-menu a {
     font-size: var(--font-size-24);
   }
