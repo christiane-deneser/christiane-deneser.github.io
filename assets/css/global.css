@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* assets/scss/global.scss */
 /* assets/scss/_base.scss */
 /* forwards low-level foundation  */
@@ -147,14 +148,127 @@ a:focus-visible {
   outline-offset: 2px;
 }
 
-header {
-  height: 5rem;
+.header {
+  margin-bottom: 1.75rem;
 }
 
-header nav {
+.header-inner {
+  padding: 1rem 0 1.75rem 0;
+  border-bottom: 1px solid black;
+}
+@media (min-width: 38rem) {
+  .header-inner {
+    padding: 1rem 0;
+    border-bottom: 0;
+  }
+}
+
+.header-nav {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 38rem) {
+  .header-nav {
+    flex-direction: row-reverse;
+  }
+}
+
+.menu-button {
+  align-self: flex-end;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 0.9rem;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 0.5rem;
+  background: transparent;
+  cursor: pointer;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+@media (min-width: 38rem) {
+  .menu-button {
+    display: none;
+  }
+}
+
+.menu-button:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}
+
+/* Simple hamburger icon */
+.menu-button-burger {
+  display: block;
+}
+
+/* Menu (pushes content down because it’s in normal flow) */
+.main-menu.is-hidden {
   display: none;
 }
 
+.main-menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+@media (min-width: 38rem) {
+  .main-menu-list {
+    display: inline-flex;
+  }
+}
+
+.main-menu-list li {
+  padding: 0.5rem;
+  margin-bottom: 0;
+}
+@media (min-width: 38rem) {
+  .main-menu-list li {
+    display: inline-flex;
+  }
+}
+
+.main-menu a {
+  text-decoration: none;
+  padding: 0.5rem 0;
+  display: inline-block;
+  color: inherit;
+}
+@media (min-width: 38rem) {
+  .main-menu a {
+    font-size: var(--font-size-24);
+  }
+}
+
+.main-menu a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+
+.main-menu a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}
+
+/* Optional: a tiny open animation (safe + respects reduced motion) */
+@media (prefers-reduced-motion: no-preference) {
+  .main-menu {
+    transform-origin: top;
+    animation: menu-in 120ms ease-out;
+  }
+  @keyframes menu-in {
+    from {
+      opacity: 0;
+      transform: scaleY(0.98);
+    }
+    to {
+      opacity: 1;
+      transform: scaleY(1);
+    }
+  }
+}
 footer {
   font-weight: 600;
   background: var(--color-bg-secondary);

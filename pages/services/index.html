@@ -30,15 +30,27 @@ This page lets people decide how to work with you. -->
     <link rel="stylesheet" href="../../assets/css/global.css"  />
   </head>
   <body>
-    <header>
+    <header class="js-header header">
       <div class="container">
-        <nav aria-label="Main">
-          <ul>
-            <li><a href="pages/services/">Services</a></li>
-            <li><a href="pages/about/">About</a></li>
-            <li><a href="pages/contact/">Contact</a></li>
-          </ul>
-        </nav>
+        <div class="header-inner">
+          <nav aria-label="Main" class="header-nav">
+            <button 
+              class="js-menu-button menu-button" 
+              type="button"
+              aria-expanded="false"
+              aria-controls="id-main-menu">
+              <img class="menu-button-burger" src="../../assets/img/burger-button.svg" alt="Menu">
+            </button>
+            <div id="id-main-menu" class="js-main-menu main-menu">
+              <ul class="main-menu-list">
+                <li><a href="/">Home</a></li>
+                <li><a href="pages/services/">Services</a></li>
+                <li><a href="pages/about/">About</a></li>
+                <li><a href="pages/contact/">Contact</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
       </div>
     </header>
     <main>
@@ -133,6 +145,6 @@ This page lets people decide how to work with you. -->
         </div>
       </article>
     </main>
-    <script src="../../assets/js/main.js" defer></script>
+    <script type="module" src="../../assets/js/main.js"></script>
   </body>
 </html>
