@@ -353,6 +353,29 @@ footer ul a:hover {
     grid-area: feature4;
   }
 }
+.grid-home {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+}
+@media (min-width: 64rem) {
+  .grid-home {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "empty empty sidebar" "hero hero sidebar";
+  }
+}
+
+@media (min-width: 1400px) {
+  .grid-home-item-1 {
+    grid-area: hero;
+  }
+  .grid-home-item-2 {
+    grid-area: sidebar;
+  }
+}
 /* Simple layout for library landing page */
 @media (min-width: 64rem) {
   main {
