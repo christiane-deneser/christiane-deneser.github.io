@@ -3,7 +3,7 @@
 }
 
 .header-inner {
-  padding: 1rem 0 1.75rem 0;
+  padding: 1rem 0;
   border-bottom: 1px solid black;
    @media (min-width: 48rem) {
     padding: 1rem 0;
@@ -21,16 +21,17 @@
 
 .menu-button {
   align-self: flex-end;
-  display: inline-flex;
-  align-items: center;
   gap: 0.75rem;
-  padding: 0.75rem 0.9rem;
-  border: 1px solid rgba(0,0,0,0.3);
-  border-radius: 0.5rem;
+  padding: 0;
+  border: 0;
+  // border-radius: 0.5rem;
   background: transparent;
   cursor: pointer;
   width: 3.5rem;
   height: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   @media (min-width: 48rem) {
     display: none;
   }
@@ -44,6 +45,7 @@
 /* Simple hamburger icon */
 .menu-button-burger {
   display: block;
+  width: 2.5rem;
 }
 
 /* Menu (pushes content down because it’s in normal flow) */
