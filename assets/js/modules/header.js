@@ -25,7 +25,7 @@ export default class Header {
   //TODO: exclude to separate Helper module
   breakpoint() {
     const mqDesktop = window.matchMedia("(min-width: 1024px)").matches;
-    const mqTablet = window.matchMedia("(min-width: 608px)").matches;
+    const mqTablet = window.matchMedia("(min-width: 768px)").matches;
     const mqMobile = window.matchMedia("(min-width: 320px)").matches;
 
     if (mqDesktop) return "desktop";
