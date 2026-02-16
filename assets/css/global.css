@@ -241,6 +241,7 @@ a:focus-visible {
   }
 }
 
+.main-menu-list a.current,
 .main-menu a:hover {
   text-decoration: underline;
   text-decoration-thickness: 2px;
@@ -302,6 +303,7 @@ footer ul a {
   color: inherit;
 }
 
+footer ul a.current,
 footer ul a:hover {
   text-decoration: underline;
   text-decoration-thickness: 2px;
