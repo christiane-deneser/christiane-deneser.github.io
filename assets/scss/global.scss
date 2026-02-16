@@ -5,10 +5,14 @@
 @use 'header';
 @use 'footer';
 @use 'teaser';
+@use 'grids';
 
 /* Simple layout for library landing page */
 main {
-  margin-bottom: 4rem;
+  @media (min-width: 64rem) {
+    max-width: 85%;
+    margin: 0 auto;
+  }
 }
 
 .container {
