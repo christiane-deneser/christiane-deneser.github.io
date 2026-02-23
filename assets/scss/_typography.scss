@@ -2,44 +2,63 @@
 
 body {
   font-family: var(--font-body);
-  font-size: var(--font-size-18);
+  font-size: var(--font-size-20);
   font-weight: 400;
   line-height: var(--line-height);
   color: var(--color-text);
-  // font-family: "aquavit", sans-serif;
-// font-weight: 600;
-font-style: normal;
+  font-style: normal;
+}
+
+.italic {
+  font-weight: 100;
+  font-style: italic;
 }
 
 h1, h2, h3 {
   font-family: var(--font-headings);  
   font-weight: 600;
   line-height: var(--line-height-h);
-  margin-bottom: var(--space-m);
+  margin-bottom: var(--space-l);
   // max-width: 35ch;
 }
 
 h1 {
-  font-size: var(--font-size-34);
+  font-size: var(--font-size-40);
+  font-weight: 800; // roca black
   @media (min-width: 48rem) {
-    font-size: var(--font-size-56);
+    font-size: var(--font-size-66);
+  }
+  @media (min-width: 64rem) {
+    font-size: var(--font-size-104);
   }
 }
 
 h2 {
-  font-size: var(--font-size-34);
+  font-size: var(--font-size-36);
   @media (min-width: 48rem) {
     font-size: var(--font-size-56);
+  }
+  @media (min-width: 64rem) {
+    font-size: var(--font-size-60);
   }
 }
 
 h3 {
-  font-size: var(--font-size-24);
+  font-size: var(--font-size-26);
+  @media (min-width: 48rem) {
+    font-size: var(--font-size-36);
+  }
+  @media (min-width: 64rem) {
+    font-size: var(--font-size-40);
+  }
 }
 
 p {
   margin-bottom: var(--space-m);
   max-width: 65ch;
+  @media (min-width: 64rem) {
+    font-size: var(--font-size-24);
+  }
 }
 
 ol, ul {

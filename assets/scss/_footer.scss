@@ -41,8 +41,8 @@
   text-decoration: none;
   color: inherit;
 
-  @media (min-width: 48rem) {
-    font-size: var(--font-size-18);
+  @media (min-width: 64rem) {
+    font-size: var(--font-size-24);
   }
 }
 
@@ -50,4 +50,5 @@
 .footer-list-link:hover {
   text-decoration: underline;
   text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
 }

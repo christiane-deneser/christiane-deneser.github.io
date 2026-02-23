@@ -56,10 +56,15 @@ input, button, textarea, select {
   --font-size-18: 1.125rem;
   --font-size-20: 1.25rem;
   --font-size-24: 1.5rem;
+  --font-size-26: 1.625rem;
   --font-size-32: 2rem;
   --font-size-34: 2.125rem;
+  --font-size-36: 2.25rem;
+  --font-size-40: 2.5rem;
   --font-size-56: 3.5rem;
   --font-size-60: 3.75rem;
+  --font-size-66: 4.125rem;
+  --font-size-104: 6.5rem;
   --line-height: 1.5;
   --line-height-h: 1.2;
   --color-text: #111;
@@ -84,45 +89,76 @@ body {
 /* assets/scss/_typography.scss */
 body {
   font-family: var(--font-body);
-  font-size: var(--font-size-18);
+  font-size: var(--font-size-20);
   font-weight: 400;
   line-height: var(--line-height);
   color: var(--color-text);
   font-style: normal;
 }
 
+.italic {
+  font-weight: 100;
+  font-style: italic;
+}
+
 h1, h2, h3 {
   font-family: var(--font-headings);
   font-weight: 600;
   line-height: var(--line-height-h);
-  margin-bottom: var(--space-m);
+  margin-bottom: var(--space-l);
 }
 
 h1 {
-  font-size: var(--font-size-34);
+  font-size: var(--font-size-40);
+  font-weight: 800;
 }
 @media (min-width: 48rem) {
   h1 {
-    font-size: var(--font-size-56);
+    font-size: var(--font-size-66);
+  }
+}
+@media (min-width: 64rem) {
+  h1 {
+    font-size: var(--font-size-104);
   }
 }
 
 h2 {
-  font-size: var(--font-size-34);
+  font-size: var(--font-size-36);
 }
 @media (min-width: 48rem) {
   h2 {
     font-size: var(--font-size-56);
   }
 }
+@media (min-width: 64rem) {
+  h2 {
+    font-size: var(--font-size-60);
+  }
+}
 
 h3 {
-  font-size: var(--font-size-24);
+  font-size: var(--font-size-26);
+}
+@media (min-width: 48rem) {
+  h3 {
+    font-size: var(--font-size-36);
+  }
+}
+@media (min-width: 64rem) {
+  h3 {
+    font-size: var(--font-size-40);
+  }
 }
 
 p {
   margin-bottom: var(--space-m);
   max-width: 65ch;
+}
+@media (min-width: 64rem) {
+  p {
+    font-size: var(--font-size-24);
+  }
 }
 
 ol, ul {
@@ -251,6 +287,7 @@ a:focus-visible {
 .header-menu-link:hover {
   text-decoration: underline;
   text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
 }
 
 .header-menu-link:focus-visible {
@@ -319,9 +356,9 @@ a:focus-visible {
   text-decoration: none;
   color: inherit;
 }
-@media (min-width: 48rem) {
+@media (min-width: 64rem) {
   .footer-list-link {
-    font-size: var(--font-size-18);
+    font-size: var(--font-size-24);
   }
 }
 
@@ -329,6 +366,7 @@ a:focus-visible {
 .footer-list-link:hover {
   text-decoration: underline;
   text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
 }
 
 .teaser {
