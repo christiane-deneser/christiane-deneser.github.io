@@ -152,6 +152,13 @@ a:focus-visible {
   margin-bottom: 1.75rem;
 }
 
+@media (min-width: 64rem) {
+  header .container {
+    max-width: 85%;
+    margin: 0 auto;
+  }
+}
+
 .header-inner {
   padding: 1rem 0;
   border-bottom: 1px solid black;
@@ -172,7 +179,7 @@ a:focus-visible {
   }
 }
 
-.menu-button {
+.header-menu-button {
   align-self: flex-end;
   gap: 0.75rem;
   padding: 0;
@@ -186,76 +193,74 @@ a:focus-visible {
   align-items: center;
 }
 @media (min-width: 48rem) {
-  .menu-button {
+  .header-menu-button {
     display: none;
   }
 }
 
-.menu-button:focus-visible {
+.header-menu-button:focus-visible {
   outline: 2px solid currentColor;
   outline-offset: 3px;
 }
 
 /* Simple hamburger icon */
-.menu-button-burger {
+.header-menu-icon {
   display: block;
   width: 2.5rem;
 }
 
 /* Menu (pushes content down because it’s in normal flow) */
-.main-menu.is-hidden {
+.header-menu.is-hidden {
   display: none;
 }
 
-.main-menu-list {
+.header-menu-list {
   list-style: none;
   padding: 0;
   margin: 0;
   display: grid;
-  gap: 0.75rem;
+  gap: 0.5rem;
 }
 @media (min-width: 48rem) {
-  .main-menu-list {
-    display: inline-flex;
+  .header-menu-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: 4rem;
   }
 }
 
-.main-menu-list li {
-  padding: 0.5rem;
+.header-menu-item {
+  padding: 0.5rem 0;
   margin-bottom: 0;
 }
-@media (min-width: 48rem) {
-  .main-menu-list li {
-    display: inline-flex;
-  }
-}
 
-.main-menu a {
+.header-menu-link {
   text-decoration: none;
   padding: 0.5rem 0;
   display: inline-block;
   color: inherit;
 }
 @media (min-width: 48rem) {
-  .main-menu a {
+  .header-menu-link {
     font-size: var(--font-size-24);
   }
 }
 
-.main-menu-list a.current,
-.main-menu a:hover {
+.header-menu-link.current,
+.header-menu-link:hover {
   text-decoration: underline;
   text-decoration-thickness: 2px;
 }
 
-.main-menu a:focus-visible {
+.header-menu-link:focus-visible {
   outline: 2px solid currentColor;
   outline-offset: 3px;
 }
 
 /* Optional: a tiny open animation (safe + respects reduced motion) */
 @media (prefers-reduced-motion: no-preference) {
-  .main-menu {
+  .header-menu {
     transform-origin: top;
     animation: menu-in 120ms ease-out;
   }
@@ -423,6 +428,9 @@ footer ul a:hover {
 }
 
 /* Simple layout for library landing page */
+main {
+  margin-bottom: 1.75rem;
+}
 @media (min-width: 64rem) {
   main {
     max-width: 85%;
