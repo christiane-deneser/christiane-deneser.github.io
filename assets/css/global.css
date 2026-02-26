@@ -68,9 +68,9 @@ input, button, textarea, select {
   --line-height: 1.5;
   --line-height-h: 1.2;
   --color-text: #111;
-  --color-text-secondary: #fff;
+  --color-text-secondary: #F0EEE9;
   --color-link: #005fcc;
-  --color-bg: #fbfff7;
+  --color-bg: #F0EEE9;
   --color-bg-secondary: #111;
   --1: #4f052fc7;
   --2: #543f7a;
