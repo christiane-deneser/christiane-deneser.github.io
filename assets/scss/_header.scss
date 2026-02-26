@@ -85,6 +85,8 @@ header .container {
 }
 
 .header-menu-link {
+  font-weight: 400;
+  font-style: italic;
   text-decoration: none;
   padding: 0.5rem 0;
   display: inline-block;
@@ -95,8 +97,9 @@ header .container {
   }
 }
 
-.header-menu-link.current,
-.header-menu-link:hover {
+// refactor 
+.header-menu-link.currentX,
+.header-menu-link:hoverX {
   text-decoration: underline;
   text-decoration-thickness: 2px;
   text-underline-offset: 3px;
@@ -105,6 +108,25 @@ header .container {
 .header-menu-link:focus-visible {
   outline: 2px solid currentColor;
   outline-offset: 3px;
+}
+
+// refactor 
+.header-menu-link {
+  position: relative;
+  // text-decoration: none;
+}
+
+// refactor 
+.header-menu-link.current::after,
+.header-menu-link:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0.4em;
+  width: 100%;
+  height: 2px;
+  background: currentColor;
+  transform: skewX(-15deg);
 }
 
 /* Optional: a tiny open animation (safe + respects reduced motion) */
