@@ -57,10 +57,12 @@ input, button, textarea, select {
   --font-size-20: 1.25rem;
   --font-size-24: 1.5rem;
   --font-size-26: 1.625rem;
+  --font-size-28: 1.75rem;
   --font-size-32: 2rem;
   --font-size-34: 2.125rem;
   --font-size-36: 2.25rem;
   --font-size-40: 2.5rem;
+  --font-size-44: 2.75rem;
   --font-size-56: 3.5rem;
   --font-size-60: 3.75rem;
   --font-size-66: 4.125rem;
@@ -103,14 +105,15 @@ body {
 
 h1, h2, h3 {
   font-family: var(--font-headings);
-  font-weight: 600;
+  font-weight: 700;
   line-height: var(--line-height-h);
   margin-bottom: var(--space-l);
 }
 
 h1 {
-  font-size: var(--font-size-40);
+  font-size: var(--font-size-44);
   font-weight: 800;
+  line-height: 0.9;
 }
 @media (min-width: 48rem) {
   h1 {
@@ -125,6 +128,7 @@ h1 {
 
 h2 {
   font-size: var(--font-size-36);
+  line-height: 0.95;
 }
 @media (min-width: 48rem) {
   h2 {
@@ -139,6 +143,7 @@ h2 {
 
 h3 {
   font-size: var(--font-size-26);
+  line-height: 1.2;
 }
 @media (min-width: 48rem) {
   h3 {
@@ -149,6 +154,12 @@ h3 {
   h3 {
     font-size: var(--font-size-40);
   }
+}
+
+.anleser {
+  font-weight: 300;
+  font-size: var(--font-size-28);
+  line-height: 1.1;
 }
 
 p {
@@ -512,6 +523,15 @@ main {
 
 .container {
   padding: 0 1rem;
+}
+
+.spacing-mb-s {
+  display: block;
+  margin-bottom: var(--space-s);
+}
+
+.spacing-mb-l {
+  margin-bottom: var(--space-l);
 }
 
 /*# sourceMappingURL=global.css.map */

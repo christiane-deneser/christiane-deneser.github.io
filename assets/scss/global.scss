@@ -20,3 +20,12 @@ main {
 .container {
   padding: 0 1rem;
 }
+
+.spacing-mb-s {
+  display: block;
+  margin-bottom: var(--space-s);
+}
+
+.spacing-mb-l {
+  margin-bottom: var(--space-l);
+}
