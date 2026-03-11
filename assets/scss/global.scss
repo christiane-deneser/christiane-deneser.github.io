@@ -33,6 +33,12 @@ main {
   margin-bottom: var(--space-m);
 }
 
+.spacing-mb-m-large {
+  @media (min-width: 64rem) {
+    margin-bottom: var(--space-m);
+  }
+}
+
 .spacing-mb-l {
   margin-bottom: var(--space-l);
 }
@@ -51,4 +57,10 @@ main {
 
 .spacing-mt-40 {
   margin-top: var(--space-40);
+}
+
+.spacing-mt-120-large {
+  @media (min-width: 64rem) {
+    margin-top: var(--space-120);
+  }
 }

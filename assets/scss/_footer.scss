@@ -1,5 +1,5 @@
 .footer {
-  font-weight: 700;
+  font-weight: 400;
   background: var(--color-bg-secondary);
   color: var(--color-text-secondary);
   padding: 2rem 0;
@@ -49,6 +49,6 @@
 .footer-list-link.current,
 .footer-list-link:hover {
   text-decoration: underline;
-  text-decoration-thickness: 2px;
+  text-decoration-thickness: 1px;
   text-underline-offset: 0.4em;
 }

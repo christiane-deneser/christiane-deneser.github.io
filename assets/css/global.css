@@ -84,6 +84,7 @@ input, button, textarea, select {
   --space-30: 1.875rem;
   --space-40: 2.5rem;
   --space-80: 5rem;
+  --space-120: 7.5rem;
   --radius-pill: 999px;
 }
 
@@ -108,7 +109,7 @@ body {
 
 h1, h2, h3 {
   font-family: var(--font-headings);
-  font-weight: 700;
+  font-weight: 400;
   line-height: var(--line-height-h);
   margin-bottom: var(--space-l);
 }
@@ -164,6 +165,12 @@ h3 {
   font-style: italic;
   font-size: var(--font-size-28);
   line-height: 1.2;
+}
+@media (min-width: 64rem) {
+  .anleser {
+    max-width: 50ch;
+    font-size: var(--font-size-32);
+  }
 }
 
 p {
@@ -323,7 +330,7 @@ a:focus-visible {
   left: 0;
   bottom: 0.4em;
   width: 100%;
-  height: 2px;
+  height: 1px;
   background: currentColor;
   transform: skewX(-15deg);
 }
@@ -346,7 +353,7 @@ a:focus-visible {
   }
 }
 .footer {
-  font-weight: 700;
+  font-weight: 400;
   background: var(--color-bg-secondary);
   color: var(--color-text-secondary);
   padding: 2rem 0;
@@ -398,7 +405,7 @@ a:focus-visible {
 .footer-list-link.current,
 .footer-list-link:hover {
   text-decoration: underline;
-  text-decoration-thickness: 2px;
+  text-decoration-thickness: 1px;
   text-underline-offset: 0.4em;
 }
 
@@ -451,15 +458,11 @@ a:focus-visible {
 .grid-home {
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 1rem;
 }
 @media (min-width: 64rem) {
   .grid-home {
     display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(2, auto);
-    grid-template-areas: "empty empty sidebar" "hero hero sidebar";
+    grid-gap: 2.5rem;
   }
 }
 
@@ -487,6 +490,9 @@ a:focus-visible {
 
 .cta-secondary {
   color: currentColor;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
 }
 
 .cta:hover {
@@ -558,6 +564,12 @@ main {
   margin-bottom: var(--space-m);
 }
 
+@media (min-width: 64rem) {
+  .spacing-mb-m-large {
+    margin-bottom: var(--space-m);
+  }
+}
+
 .spacing-mb-l {
   margin-bottom: var(--space-l);
 }
@@ -576,6 +588,12 @@ main {
 
 .spacing-mt-40 {
   margin-top: var(--space-40);
+}
+
+@media (min-width: 64rem) {
+  .spacing-mt-120-large {
+    margin-top: var(--space-120);
+  }
 }
 
 /*# sourceMappingURL=global.css.map */

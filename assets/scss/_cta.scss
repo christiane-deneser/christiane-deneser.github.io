@@ -22,6 +22,9 @@
 
 .cta-secondary {
   color: currentColor;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
 }
 
 .cta:hover {
