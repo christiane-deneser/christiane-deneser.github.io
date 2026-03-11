@@ -19,6 +19,9 @@ main {
 
 .container {
   padding: 0 1rem;
+  @media (min-width: 48rem) {
+    padding: 0 2rem;
+  }
 }
 
 .spacing-mb-s {
@@ -26,6 +29,26 @@ main {
   margin-bottom: var(--space-s);
 }
 
+.spacing-mb-m {
+  margin-bottom: var(--space-m);
+}
+
 .spacing-mb-l {
   margin-bottom: var(--space-l);
+}
+
+.spacing-mb-80 {
+  margin-bottom: var(--space-80);
+}
+
+.spacing-mb-30 {
+  margin-bottom: var(--space-30);
+}
+
+.spacing-mb-40 {
+  margin-bottom: var(--space-40);
+}
+
+.spacing-mt-40 {
+  margin-top: var(--space-40);
 }
