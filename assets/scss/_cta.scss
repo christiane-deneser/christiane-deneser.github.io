@@ -11,15 +11,15 @@
   text-decoration: none;
 
   border: 1px solid #000;
-  background-color: transparent;
-  color: #000;
+  background-color: #000;
+  color: var(--color-text-secondary);
 
   transition:
     background-color 0.2s ease,
     color 0.2s ease,
     border-color 0.2s ease;
 }
-
+  
 .cta-secondary {
   color: currentColor;
   text-decoration: underline;
@@ -28,13 +28,13 @@
 }
 
 .cta:hover {
-  background-color: #000;
-  color: #fff;
+  background-color: var(--color-bg);
+  color: var(--color-text);
 }
 
+// work on focus style
 .cta-secondary:focus-visible,
-.cta-secondary:focus,
-.cta-secondary:hover {
+.cta-secondary:focus {
   outline: 2px solid #000;
   outline-offset: 3px;
   border-radius: 3px;
@@ -46,11 +46,10 @@
   outline-offset: 3px;
 }
 
-.cta:hover,
-.cta:focus-visible {
-  background-color: #000;
-  color: #fff;
-}
+// .cta:focus-visible {
+//   background-color: #000;
+//   color: #fff;
+// }
 
 .cta:disabled {
   opacity: 0.6;

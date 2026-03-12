@@ -81,6 +81,7 @@ input, button, textarea, select {
   --space-m: 1rem;
   --space-l: 1.5rem;
   --space-xl: 2rem;
+  --space-20: 1.25rem;
   --space-30: 1.875rem;
   --space-40: 2.5rem;
   --space-80: 5rem;
@@ -162,7 +163,6 @@ h3 {
 
 .anleser {
   font-weight: 300;
-  font-style: italic;
   font-size: var(--font-size-28);
   line-height: 1.2;
 }
@@ -204,6 +204,7 @@ a:hover {
 a:focus-visible {
   outline: 2px solid currentColor;
   outline-offset: 2px;
+  border-radius: 5px;
 }
 
 .header {
@@ -259,6 +260,7 @@ a:focus-visible {
 .header-menu-button:focus-visible {
   outline: 2px solid currentColor;
   outline-offset: 3px;
+  border-radius: 5px;
 }
 
 /* Simple hamburger icon */
@@ -317,6 +319,7 @@ a:focus-visible {
 .header-menu-link:focus-visible {
   outline: 2px solid currentColor;
   outline-offset: 3px;
+  border-radius: 5px;
 }
 
 .header-menu-link {
@@ -483,8 +486,8 @@ a:focus-visible {
   font-weight: 400;
   text-decoration: none;
   border: 1px solid #000;
-  background-color: transparent;
-  color: #000;
+  background-color: #000;
+  color: var(--color-text-secondary);
   transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
 
@@ -496,13 +499,12 @@ a:focus-visible {
 }
 
 .cta:hover {
-  background-color: #000;
-  color: #fff;
+  background-color: var(--color-bg);
+  color: var(--color-text);
 }
 
 .cta-secondary:focus-visible,
-.cta-secondary:focus,
-.cta-secondary:hover {
+.cta-secondary:focus {
   outline: 2px solid #000;
   outline-offset: 3px;
   border-radius: 3px;
@@ -512,12 +514,6 @@ a:focus-visible {
 .cta:focus-visible {
   outline: 2px solid #000;
   outline-offset: 3px;
-}
-
-.cta:hover,
-.cta:focus-visible {
-  background-color: #000;
-  color: #fff;
 }
 
 .cta:disabled {
@@ -584,6 +580,10 @@ main {
 
 .spacing-mb-40 {
   margin-bottom: var(--space-40);
+}
+
+.spacing-mt-20 {
+  margin-top: var(--space-20);
 }
 
 .spacing-mt-40 {
