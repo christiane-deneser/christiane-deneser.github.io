@@ -20,12 +20,14 @@ h1, h2, h3 {
   line-height: var(--line-height-h);
   margin-bottom: var(--space-l);
   // max-width: 35ch;
+  max-width: 24ch;
 }
 
 h1 {
   font-size: var(--font-size-44);
   font-weight: 800; // roca black
   line-height: 0.9;
+  margin-bottom: var(--space-m);
   @media (min-width: 48rem) {
     font-size: var(--font-size-66);
   }
@@ -35,8 +37,9 @@ h1 {
 }
 
 h2 {
-  font-size: var(--font-size-36);
+  font-size: var(--font-size-32);
   line-height: 0.95;
+  margin-bottom: 5px;
   @media (min-width: 48rem) {
     font-size: var(--font-size-56);
   }

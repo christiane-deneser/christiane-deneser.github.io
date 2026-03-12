@@ -113,12 +113,14 @@ h1, h2, h3 {
   font-weight: 400;
   line-height: var(--line-height-h);
   margin-bottom: var(--space-l);
+  max-width: 24ch;
 }
 
 h1 {
   font-size: var(--font-size-44);
   font-weight: 800;
   line-height: 0.9;
+  margin-bottom: var(--space-m);
 }
 @media (min-width: 48rem) {
   h1 {
@@ -132,8 +134,9 @@ h1 {
 }
 
 h2 {
-  font-size: var(--font-size-36);
+  font-size: var(--font-size-32);
   line-height: 0.95;
+  margin-bottom: 5px;
 }
 @media (min-width: 48rem) {
   h2 {
@@ -578,6 +581,12 @@ main {
   margin-bottom: var(--space-30);
 }
 
+@media (min-width: 64rem) {
+  .spacing-mb-30-large {
+    margin-bottom: var(--space-30);
+  }
+}
+
 .spacing-mb-40 {
   margin-bottom: var(--space-40);
 }
@@ -594,6 +603,10 @@ main {
   .spacing-mt-120-large {
     margin-top: var(--space-120);
   }
+}
+
+.spacing-mb-0 {
+  margin-bottom: 0;
 }
 
 /*# sourceMappingURL=global.css.map */
