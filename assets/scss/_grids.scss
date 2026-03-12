@@ -72,4 +72,29 @@
     grid-area: sidebar;
   }
 }
+@media (min-width: 64rem) {
+  .grid-about {
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas:
+    "hero hero"
+    "left right"
+    "empty right";
+}
+
+.grid-about-item-hero {
+  grid-area: hero;
+}
+
+.grid-about-item-1 {
+  grid-area: left;
+}
+.grid-about-item-2 {
+  grid-area: right;
+}
+
+.grid-about-item-3X {
+  grid-area: right;
+}
+}
 
