@@ -574,6 +574,15 @@ a:focus-visible {
   }
 }
 
+.portrait-img-wrapper--home {
+  width: 40vw;
+}
+@media (min-width: 64rem) {
+  .portrait-img-wrapper--home {
+    width: 25vw;
+  }
+}
+
 .portrait-img {
   width: 100%;
   height: auto;
