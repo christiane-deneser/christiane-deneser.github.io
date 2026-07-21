@@ -9,7 +9,6 @@ It’s a minimal, focused portfolio that brings together my work in:
 - Web accessibility (WCAG 2.2 / EN 301 549 / EAA)
 - Neuro-inclusive, low-friction UX
 - Accessible component design
-- AI-assisted accessibility workflows
 
 ---
 
@@ -29,7 +28,6 @@ An overview of my accessibility practice, including:
 - Design systems and accessible components
 - Manual testing (keyboard, screen readers)
 - Automated checks (axe, Accessibility Insights)
-- Using AI tools to support accessibility work (not replace it)
 
 ### 3. Accessible UI Components (Live Demos)
 This site links to **live demos** from my accessible component library:
@@ -103,7 +101,7 @@ Polished, framework-agnostic accessible UI components with documentation and liv
 Repo: https://github.com/christiane-deneser/accessible-component-library
 
 ### **`a11y-lab`**
-Experimental sandbox for accessibility patterns, WCAG notes, testing, and AI workflows.  
+Experimental sandbox for accessibility patterns, WCAG notes, and testing
 Repo: https://github.com/christiane-deneser/a11y-lab
 
 ---
@@ -116,7 +114,6 @@ My focus:
 
 - Building accessible, digital experiences  
 - Supporting teams with accessible components and design systems  
-- Bringing together accessibility, creativity, and AI-assisted workflows  
 
 - Personal website: https://christianedeneser.com  
 - LinkedIn: [LinkedIn Christiane](https://www.linkedin.com/in/christiane-deneser-a262b581/)  
