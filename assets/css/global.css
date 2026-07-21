@@ -164,6 +164,14 @@ h3 {
   }
 }
 
+.h3 {
+  font-family: var(--font-body);
+  font-size: var(--font-size-24);
+  line-height: 1.2;
+  font-weight: 700;
+  max-width: none;
+}
+
 .anleser {
   font-weight: 300;
   font-size: var(--font-size-28);
