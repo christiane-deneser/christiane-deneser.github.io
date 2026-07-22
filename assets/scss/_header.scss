@@ -98,6 +98,10 @@ header .container {
   }
 }
 
+.header-menu-link.current {
+  font-weight: 700;
+}
+
 // refactor 
 .header-menu-link.currentX,
 .header-menu-link:hoverX {
@@ -126,7 +130,7 @@ header .container {
   left: 0;
   bottom: 0.4em;
   width: 100%;
-  height: 1px;
+  height: 2px;
   background: currentColor;
   transform: skewX(-15deg);
 }
