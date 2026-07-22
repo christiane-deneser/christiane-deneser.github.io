@@ -1,0 +1,11 @@
+{
+  "name": "christiane-deneser.github.io",
+  "version": "1.0.0",
+  "scripts": {
+    "sass": "sass assets/scss/global.scss assets/css/global.css && sass components:components",
+    "sass:watch": "sass --watch assets/scss/global.scss:assets/css/global.css components:components"
+  },
+  "devDependencies": {
+    "sass": "^1.94.2"
+  }
+}

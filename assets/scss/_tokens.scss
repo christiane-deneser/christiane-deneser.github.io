@@ -1,0 +1,51 @@
+/* assets/scss/_tokens.scss */
+
+:root {
+  --font-headings: "roca", sans-serif;
+  --font-body: "ff-dagny-web-pro", sans-serif;
+  // --font-body: "forma-djr-micro", sans-serif;
+  
+
+  --font-size-14: 0.875rem;
+  --font-size-16: 1rem;
+  --font-size-18: 1.125rem;
+  --font-size-20: 1.25rem;
+  --font-size-24: 1.5rem;
+  --font-size-26: 1.625rem;
+  --font-size-28: 1.75rem;
+  --font-size-32: 2rem;
+  --font-size-34: 2.125rem;
+  --font-size-36: 2.25rem;
+  --font-size-40: 2.5rem;
+  --font-size-44: 2.75rem;
+  --font-size-56: 3.5rem;
+  --font-size-60: 3.75rem;
+  --font-size-66: 4.125rem;
+  --font-size-104: 6.5rem;
+
+  --line-height: 1.5;
+  --line-height-h: 1.2;
+
+  --color-text: #111; //primary
+  --color-text-secondary: #F0EEE9; //#fff;
+  --color-link: #005fcc;
+
+  --color-bg: #F0EEE9; // #fbfff7; //#F3F3F3; //;primary background color
+  --color-bg-secondary: #111;
+  --1: #4f052fc7; 
+  --2: #543f7a;
+
+  --space-xs: 0.25rem; //4px
+  --space-s: 0.5rem; //8px
+  --space-m: 1rem; //16px
+  --space-l: 1.5rem; //24px
+  --space-xl: 2rem; //32px
+
+  --space-20: 1.25rem; //20px
+  --space-30: 1.875rem; //30px
+  --space-40: 2.5rem; //40px
+  --space-80: 5rem; //80px
+  --space-120: 7.5rem; //120px
+
+  --radius-pill: 999px;
+}

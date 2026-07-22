@@ -1,0 +1,73 @@
+.cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0.75rem 1.25rem;
+  border-radius: 5px;
+
+  // font-size: 1rem;
+  font-weight: 400; //600;
+  text-decoration: none;
+
+  border: 1px solid #000;
+  background-color: #000;
+  color: var(--color-text-secondary);
+
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+  
+.cta-secondary {
+  color: currentColor;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+}
+
+.cta:hover {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+// work on focus style
+.cta-secondary:focus-visible,
+.cta-secondary:focus {
+  outline: 2px solid #000;
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+
+.cta-secondary:focus-visible,
+.cta:focus-visible {
+  outline: 2px solid #000;
+  outline-offset: 3px;
+}
+
+// .cta:focus-visible {
+//   background-color: #000;
+//   color: #fff;
+// }
+
+.cta:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.cta-secondary,
+.cta {
+  transition: all 200ms ease-in-out;
+}
+
+.cta-secondary:hover,
+.cta:hover {
+  transform: translateY(-1px);
+}
+
+@media (min-width: 48rem) {
+  .cta {
+    // font-size: 1.125rem;
+  }
+}

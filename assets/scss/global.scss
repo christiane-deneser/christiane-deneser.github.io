@@ -1,0 +1,81 @@
+/* assets/scss/global.scss */
+
+@use 'base';
+@use 'typography';
+@use 'header';
+@use 'footer';
+@use 'teaser';
+@use 'grids';
+@use 'cta';
+@use 'portrait-img';
+
+/* Simple layout for library landing page */
+main {
+  margin-bottom: 1.75rem;
+  @media (min-width: 64rem) {
+    max-width: 85%;
+    margin: 0 auto;
+  }
+}
+
+.container {
+  padding: 0 1rem;
+  @media (min-width: 48rem) {
+    padding: 0 2rem;
+  }
+}
+
+.spacing-mb-s {
+  display: block;
+  margin-bottom: var(--space-s);
+}
+
+.spacing-mb-m {
+  margin-bottom: var(--space-m);
+}
+
+.spacing-mb-m-large {
+  @media (min-width: 64rem) {
+    margin-bottom: var(--space-m);
+  }
+}
+
+.spacing-mb-l {
+  margin-bottom: var(--space-l);
+}
+
+.spacing-mb-80 {
+  margin-bottom: var(--space-80);
+}
+
+.spacing-mb-30 {
+  margin-bottom: var(--space-30);
+}
+
+.spacing-mb-30-large {
+  @media (min-width: 64rem) {
+    margin-bottom: var(--space-30);
+  }
+}
+
+.spacing-mb-40 {
+  margin-bottom: var(--space-40);
+}
+
+.spacing-mt-20 {
+  margin-top: var(--space-20);
+}
+
+.spacing-mt-40 {
+  margin-top: var(--space-40);
+}
+
+.spacing-mt-120-large {
+  @media (min-width: 64rem) {
+    margin-top: var(--space-120);
+  }
+}
+
+.spacing-mb-0 {
+  margin-bottom: 0;
+}

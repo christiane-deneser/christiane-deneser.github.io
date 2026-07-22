@@ -1,0 +1,112 @@
+/* assets/scss/_typography.scss */
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--font-size-20);
+  font-weight: 400;
+  line-height: var(--line-height);
+  color: var(--color-text);
+  font-style: normal;
+}
+
+.italic {
+  font-weight: 100;
+  font-style: italic;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-headings);  
+  font-weight: 400;
+  line-height: var(--line-height-h);
+  margin-bottom: var(--space-l);
+  // max-width: 35ch;
+  max-width: 24ch;
+}
+
+h1 {
+  font-size: var(--font-size-44);
+  font-weight: 800; // roca black
+  line-height: 0.9;
+  margin-bottom: var(--space-m);
+  @media (min-width: 48rem) {
+    font-size: var(--font-size-66);
+  }
+  @media (min-width: 64rem) {
+    font-size: var(--font-size-104);
+  }
+}
+
+h2 {
+  font-size: var(--font-size-32);
+  line-height: 0.95;
+  margin-bottom: 5px;
+  @media (min-width: 48rem) {
+    font-size: var(--font-size-56);
+  }
+  @media (min-width: 64rem) {
+    font-size: var(--font-size-60);
+  }
+}
+
+h3 {
+  font-size: var(--font-size-26);
+  line-height: 1.2;
+  @media (min-width: 48rem) {
+    font-size: var(--font-size-36);
+  }
+  @media (min-width: 64rem) {
+    font-size: var(--font-size-40);
+  }
+}
+
+.h3 {
+  font-family: var(--font-body);
+  font-size: var(--font-size-24);
+  line-height: 1.2;
+  font-weight: 700;
+  max-width: none;
+}
+
+.anleser {
+  // font-family: ff-dagny-web-pro, sans-serif;
+  font-weight: 300;
+  // font-style: italic;
+  font-size: var(--font-size-28);
+  line-height: 1.2;
+  @media (min-width: 64rem) {
+    max-width: 50ch;
+    font-size: var(--font-size-32);
+  } 
+}
+
+p {
+  margin-bottom: var(--space-m);
+  max-width: 65ch;
+  @media (min-width: 64rem) {
+    font-size: var(--font-size-24);
+  }
+}
+
+ol, ul {
+  margin-bottom: var(--space-m);
+  padding-left: 1.25rem;
+}
+
+li {
+  margin-bottom: var(--space-xs);
+}
+
+a {
+  color: var(--color-link);
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+  border-radius: 5px;
+}
