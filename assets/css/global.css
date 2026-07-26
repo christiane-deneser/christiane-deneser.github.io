@@ -374,6 +374,17 @@ strong {
     }
   }
 }
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-icon {
+  display: block;
+  width: 15rem;
+}
+
 .footer {
   font-weight: 400;
   background: var(--color-bg-secondary);

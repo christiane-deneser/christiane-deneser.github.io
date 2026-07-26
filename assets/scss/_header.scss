@@ -147,3 +147,14 @@ header .container {
     to   { opacity: 1; transform: scaleY(1); }
   }
 }
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-icon {
+ display: block; 
+ width: 15rem;
+}
