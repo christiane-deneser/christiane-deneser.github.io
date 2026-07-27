@@ -224,8 +224,9 @@ a:focus-visible {
   border-radius: 5px;
 }
 
-strong {
+strong.italic {
   font-weight: 700;
+  font-style: italic;
 }
 
 .header {
