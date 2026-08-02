@@ -116,6 +116,7 @@ a:focus-visible {
 }
 
 strong.italic {
+  font-family: var(--font-body);
   font-weight: 400;
   font-style: italic;
 }
