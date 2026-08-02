@@ -232,7 +232,6 @@ strong.italic {
 
 .header {
   margin-bottom: 1.75rem;
-  color: var(--color-link);
 }
 
 @media (min-width: 64rem) {
@@ -316,7 +315,7 @@ strong.italic {
 .header-menu-label {
   font-size: 1rem;
   line-height: 0.5;
-  color: currentColor;
+  color: var(--color-link);
 }
 
 .header-menu {

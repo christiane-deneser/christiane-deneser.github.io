@@ -1,6 +1,5 @@
 .header {
   margin-bottom: 1.75rem;
-  color: var(--color-link);
 }
 
 // refactor
@@ -87,7 +86,7 @@ header .container {
 .header-menu-label {
   font-size: 1rem;
   line-height: 0.5;
-  color: currentColor;
+  color: var(--color-link);
 }
 
 .header-menu {
