@@ -252,23 +252,29 @@ strong.italic {
 
 .header-nav {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
 }
 @media (min-width: 48rem) {
   .header-nav {
-    flex-direction: row-reverse;
+    flex-wrap: nowrap;
   }
 }
 
+.logo {
+  flex: 1;
+  display: block;
+  padding: 0.75rem 0;
+}
+
 .header-menu-button {
-  align-self: flex-end;
-  gap: 0.75rem;
+  flex: none;
+  width: 3.5rem;
+  height: 3.5rem;
   padding: 0;
   border: 0;
   background: transparent;
   cursor: pointer;
-  width: 3.5rem;
-  height: 3.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -291,24 +297,34 @@ strong.italic {
   width: 2.5rem;
 }
 
+.header-menu {
+  flex-basis: 100%;
+}
+@media (min-width: 48rem) {
+  .header-menu {
+    flex: 1;
+  }
+}
+
 /* Menu (pushes content down because it’s in normal flow) */
 .header-menu.is-hidden {
   display: none;
 }
 
 .header-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
   list-style: none;
   padding: 0;
   margin: 0;
-  display: grid;
-  gap: 0.5rem;
 }
 @media (min-width: 48rem) {
   .header-menu-list {
-    display: flex;
+    flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    column-gap: 4rem;
+    gap: 4rem;
   }
 }
 
@@ -318,6 +334,7 @@ strong.italic {
 }
 
 .header-menu-link {
+  position: relative;
   font-weight: 400;
   font-style: italic;
   text-decoration: none;
@@ -335,21 +352,10 @@ strong.italic {
   font-weight: 700;
 }
 
-.header-menu-link.currentX,
-.header-menu-link:hoverX {
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 3px;
-}
-
 .header-menu-link:focus-visible {
   outline: 2px solid currentColor;
   outline-offset: 3px;
   border-radius: 5px;
-}
-
-.header-menu-link {
-  position: relative;
 }
 
 .header-menu-link.current::after,
@@ -381,17 +387,6 @@ strong.italic {
     }
   }
 }
-.logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.logo-icon {
-  display: block;
-  width: 15rem;
-}
-
 .footer {
   font-weight: 400;
   background: var(--color-bg-secondary);
