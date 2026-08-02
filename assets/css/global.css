@@ -232,6 +232,7 @@ strong.italic {
 
 .header {
   margin-bottom: 1.75rem;
+  color: var(--color-link);
 }
 
 @media (min-width: 64rem) {
