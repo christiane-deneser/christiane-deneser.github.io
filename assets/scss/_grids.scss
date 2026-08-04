@@ -1,6 +1,5 @@
-
+/* Can be deleted / index-old.html */
 .grid-services {
-  
 
   @media (min-width: 75rem) {
     display: grid;
@@ -11,13 +10,6 @@
       "feature1 feature2";
       // "feature3 feature4";
   }
-}
-
-/* Tablet/Desktop enhancement */
-
-.grid__itemX {
-  background: linear-gradient(135deg, var(--color-bg) 0%, #808080 100%);
-  border: 1px solid black;
 }
 
 @media (min-width: 64rem) {
@@ -41,20 +33,15 @@
     grid-area: feature4;
   }
 }
+/* END: Can be deleted / index-old.html */
 
 .grid-home {
   display: grid;
   grid-template-columns: 1fr;
-  // grid-gap: 1rem;
 
   @media (min-width: 64rem) {
     display: grid;
     grid-gap: 2.5rem;
-    // grid-template-columns: repeat(3, auto);
-    // grid-template-rows: repeat(2, auto);
-    // grid-template-areas:
-    //   "empty empty sidebar"
-    //   "hero hero sidebar";
   }
 }
 
@@ -92,4 +79,3 @@
     grid-area: right;
   }
 }
-
