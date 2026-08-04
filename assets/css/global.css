@@ -271,13 +271,24 @@ strong.italic {
 
 .logo-link {
   color: currentColor;
+  padding: 1rem 0.5rem 1rem 0;
+}
+@media (min-width: 48rem) {
+  .logo-link {
+    padding: 0.5rem 0.5rem 0.5rem 0;
+  }
 }
 
 .logo-icon {
   display: block;
   width: auto;
-  height: 4.25rem;
+  height: 2.25rem;
   max-width: 100%;
+}
+@media (min-width: 48rem) {
+  .logo-icon {
+    height: 3.25rem;
+  }
 }
 
 .header-menu-button {
