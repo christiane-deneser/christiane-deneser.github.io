@@ -481,6 +481,12 @@ a:focus-visible {
   font-weight: 700;
 }
 
+.footer-legal {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--color-text-secondary);
+}
+
 .teaser {
   margin-bottom: 4rem;
   border: 1px solid black;
