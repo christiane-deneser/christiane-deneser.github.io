@@ -30,7 +30,8 @@ header .container {
 }
 
 .logo {
-  flex: 1;
+  flex: 1; //old
+  // flex: 0 0 auto; // or flex-shrink: 0; new
   display: flex;
   align-items: center;
   padding: 0;
@@ -101,8 +102,20 @@ header .container {
 .header-menu {
   flex-basis: 100%;
 
+  display: flex; //new
+  flex-direction: column; //new
+  gap: 3rem; //new
+
   @media (min-width: 48rem) {
-    flex: 1;
+    flex: 1; //old
+
+    // flex: 1 1 auto; //new
+    // min-width: 0; //new
+
+    flex-direction: row; //new
+    align-items: center; //new
+    gap: 2.5rem; //new
+    justify-content: flex-end;
   }
 }
 
@@ -121,10 +134,13 @@ header .container {
   margin: 0;
   
   @media (min-width: 48rem) {
+    // flex:1; //new
+    // min-width: 0; //new
+
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    gap: 4rem;
+    gap: 3.5rem;
   }
 }
 
@@ -170,6 +186,16 @@ header .container {
   height: 2px;
   background: currentColor;
   transform: skewX(-15deg);
+}
+
+.language-switcher{
+    display: flex; //new
+    align-items: center; //new
+    gap: 0.5rem; //new
+
+    @media (min-width:48rem){
+        // flex: none; //new
+    }
 }
 
 /* Optional: a tiny open animation (safe + respects reduced motion) */
