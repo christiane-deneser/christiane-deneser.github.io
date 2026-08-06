@@ -15,7 +15,7 @@ header .container {
   border-bottom: 1px solid black;
   
   @media (min-width: 48rem) {
-    padding: 1rem 0;
+    padding: 1.5rem 0;
   }
 }
 
@@ -49,11 +49,11 @@ header .container {
 .logo-icon {
   display: block;
   width: auto;
-  height: 2.25rem;
+  height: 2.5rem;
   max-width: 100%;
 
   @media (min-width: 48rem) {
-    height: 3.25rem;
+    height: 3.5rem;
   }
 }
 
