@@ -600,16 +600,18 @@ a:focus-visible {
 }
 
 .cta-secondary:focus-visible,
-.cta-secondary:focus {
+.cta-secondary:focus,
+a.cta-link:focus {
   outline: 2px solid #000;
   outline-offset: 3px;
   border-radius: 3px;
 }
 
 .cta-secondary:focus-visible,
-.cta:focus-visible {
+.cta:focus-visible,
+a.cta-link:focus-visible {
   outline: 2px solid #000;
-  outline-offset: 3px;
+  outline-offset: 0.25rem;
 }
 
 .cta:disabled {
@@ -618,13 +620,36 @@ a:focus-visible {
 }
 
 .cta-secondary,
-.cta {
+.cta,
+a.cta-link {
   transition: all 200ms ease-in-out;
 }
 
 .cta-secondary:hover,
-.cta:hover {
+.cta:hover,
+a.cta-link {
   transform: translateY(-1px);
+}
+
+.cta-link {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+a.cta-link {
+  text-decoration-thickness: initial;
+  text-decoration: none;
+}
+
+a.cta-link:hover {
+  text-decoration-thickness: initial;
+  text-decoration: none;
+}
+
+.cta-helper-text {
+  margin-top: 0.3rem;
+  font-size: 1rem;
+  color: currentColor;
 }
 
 .portrait-img-container {
